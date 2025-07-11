@@ -1,0 +1,76 @@
+# VSCode Insiders Updater - Security and Cleanup
+# This .gitignore ensures sensitive data and temporary files are not committed
+
+# Temporary files and directories
+*.tmp
+*.temp
+/tmp/
+.cache/
+*.log
+
+# Lock files
+*.lock
+*.pid
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Download cache (should not be in repo)
+vscode-insiders-updates/
+*.rpm
+*.deb
+
+# System-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Environment and configuration files (may contain sensitive data)
+.env
+.env.local
+.env.production
+config.local.*
+
+# User-specific scripts and configurations
+local-config.sh
+user-settings.sh
+
+# Test artifacts
+test-results/
+coverage/
+*.test.log
+
+# Package manager artifacts
+node_modules/
+*.egg-info/
+__pycache__/
+
+# Security: Exclude any files that might contain credentials
+*credentials*
+*secrets*
+*password*
+*token*
+*key*
+*.pem
+*.key
+*.crt
+
+# Exclude compiled binaries
+*.o
+*.so
+*.dylib
+*.exe
+
+# Exclude archives
+*.tar.gz
+*.zip
+*.rar
+*.7z
